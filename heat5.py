@@ -157,7 +157,14 @@ print("####Current directory is : " + dirpath)
 print("####Current file.txt with filenames to open is:" + fileloop)
 
 fileloop2=fileloop.split(".")[0]
+
+try:
+    fileloop2=fileloop.split(".")[0]
+    fileloopJUSTCHECK=fileloop.split(".")[1]
+except:
+    fileloop2=str(fileloop[:4]+fileloop[-4:])
 #############MAKE NEW DIRECTORIES
+
 #-------------OUTPUT DIRECTORIES--------------
 
 #THE HIGHEST 25% of totalread counts
