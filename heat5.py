@@ -143,8 +143,8 @@ newfilenamesuffixor=newfilenamesuffix
 #It includes the user given namefile, start quartile and then end quartile of samples-patients,
 #1 for genus,0 for not genus labeling and 1 for correlation-heatmap, 0 for simple heatmaps
 #and finally adds one final suffix of: 0-1-2-3 for 4 quartiles of totalrow counts per bacteria
-newfilenamesuffix=str(str(newfilenamesuffix)+str("_")+str(filtering_samplesSTART)+str("_")
-                    +str(filtering_samplesEND)+str("_")+str(T_O_F_Genus)+str("_")+str(Corr_heat))+str("_")
+newfilenamesuffix=str(str(newfilenamesuffix)+str(filtering_samplesSTART)
+                    +str(filtering_samplesEND)+str(T_O_F_Genus)+str(Corr_heat))
 filtering_samplesEND=int(filtering_samplesEND)+3     #describe() function input from 3=min to 7=max
 filtering_samplesSTART=int(filtering_samplesSTART)+3 #describe() function input from 3=min to 7=max
 
