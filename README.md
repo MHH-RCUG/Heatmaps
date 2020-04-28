@@ -11,6 +11,16 @@ python3 -m pip install matplotlib
 python3 -m pip install seaborn
 ```
 
+## Simple usage
+
+`
+# Test run
+python3 heat5.py --batch_files sample.txt --filter_sTF 1 --filter_sStart 0 --filter_sEnd 4 --suffix_label A --genus 1 --corr 0
+# Test run with example files
+python3 heat5.py --batch_files eg1_sepsis_minion/sample.txt --filter_sTF 1 --filter_sStart 0 --filter_sEnd 4 --suffix_label A --genus 1 --corr 0
+
+`
+
 ## Tricks for heatmap (log2) etc.
 To make it work i did those tricks into the python script:
 
@@ -21,7 +31,7 @@ To make it work i did those tricks into the python script:
 5.  Added 0.0001 to all 0 counts (otherwise heatmap would not work)
 6.  (depending on the dataset and it's abundance of information)Filtered the samples having most read counts and the bacteria having most read counts too.
 
-## Usage:
+## Full usage:
 ```
 Create heatmaps/correlation heatmaps and dendrograms generated from csv
 files that are generated from wochenende pipeline. Those files should be filtered, sorted
