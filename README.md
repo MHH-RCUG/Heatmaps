@@ -15,9 +15,9 @@ python3 -m pip install seaborn
 
 `
 # Test run
-python3 heat5.py --batch_files sample.txt --filter_sTF 1 --filter_sStart 0 --filter_sEnd 4 -- suffix_label A --genus 1 --corr 0
+python3 heat5.py --batch_files sample.txt --filter_sTF 1 --filter_sStart 0 --filter_sEnd 4 --suffix_label A --genus 1 --corr 0
 # Test run with example files
-python3 heat5.py --batch_files eg1_sepsis_minion/sample.txt --filter_sTF 1 --filter_sStart 0 --filter_sEnd 4 -- suffix_label A --genus 1 --corr 0
+python3 heat5.py --batch_files eg1_sepsis_minion/sample.txt --filter_sTF 1 --filter_sStart 0 --filter_sEnd 4 --suffix_label A --genus 1 --corr 0
 
 `
 
