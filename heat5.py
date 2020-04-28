@@ -185,8 +185,17 @@ else:
     f = open("{}/{}".format(dirpath,fileloop), "r")
     F=f.readlines()
     left=F[0].rstrip()
+    #print(left) 
     left2=F[0].rstrip().split(".")[0]
-    left3=left2.split("_")[0]+"_"+left2.split("_")[1]+"_"+left2.split("_")[2]
+    #print(left2)
+    try:
+        left3=left2.split("_")[0]+"_"+left2.split("_")[1]+"_"+left2.split("_")[2]
+    except:
+        try:
+            left3=left2.split("_")[0]+"_"+left2.split("_")[1]#+"_"+left2.split("_")[2]
+        except:
+            left3=left2.split("_")[0]
+# 28.04.2020
     print(left3,"dataset")               #for naming
 
     dataset_dir="{}/{}".format(dirpath,left3)
@@ -231,7 +240,11 @@ result.fillna(0, inplace=True)
 #+1 to all
 
 listofChrom=['1_1_1_2', '1_1_1_1', '1_1_1_3', '1_1_1_4', '1_1_1_5', '1_1_1_6', '1_1_1_7', '1_1_1_8', '1_1_1_12', '1_1_1_11', '1_1_1_10', '1_1_1_9', '1_1_1_13','1_1_1_14', '1_1_1_18', '1_1_1_X', '1_1_1_15', '1_1_1_16', '1_1_1_17','1_1_1_20', '1_1_1_19', '1_1_1_21', '1_1_1_22', '1_1_1_Y', '1_1_1_MT']
-resultfilter = result.drop(listofChrom, 0)
+try:
+    resultfilter = result.drop(listofChrom, 0)
+except:
+    resultfilter=result    # 28.04.2020
+
 resultfilteradd1=resultfilter.add(1)
 resultfilter = np.log2(resultfilteradd1)    # figure #2 was log 2 and figure #1$
 print(resultfilter.max(),"this is the log2() ")
