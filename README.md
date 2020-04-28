@@ -1,7 +1,14 @@
 # Heatmaps
-Heatmap script for Wochenende output files
+Heatmap script for Wochenende output files containing abundance (reads per chromosome).
 
-Input can be wochenende pipeline files.
+Input can be wochenende pipeline files (bam.txt files or filtered versions of these!).
+
+## Installation
+
+python3 -m pip install pandas
+python3 -m pip install matplotlib
+python3 -m pip install seaborn
+
 
 ## Tricks for heatmap (log2) etc.
 To make it work i did those tricks into the python script:
