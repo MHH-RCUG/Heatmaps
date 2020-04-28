@@ -13,13 +13,18 @@ python3 -m pip install seaborn
 
 ## Simple usage
 
-`
+```
 # Test run
 python3 heat5.py --batch_files sample.txt --filter_sTF 1 --filter_sStart 0 --filter_sEnd 4 --suffix_label A --genus 1 --corr 0
 # Test run with example files
 python3 heat5.py --batch_files eg1_sepsis_minion/sample.txt --filter_sTF 1 --filter_sStart 0 --filter_sEnd 4 --suffix_label A --genus 1 --corr 0
 
-`
+```
+
+## Warning
+If you subsample the data to save RAM or speed, then actually mathematically "non-informative" samples are removed, i.e. those with many 0s, and are represented by another sample.
+This approach is being controversially discussed at present and will likely be removed.
+
 
 ## Tricks for heatmap (log2) etc.
 To make it work i did those tricks into the python script:
