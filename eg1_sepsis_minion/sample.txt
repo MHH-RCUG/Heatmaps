@@ -1,0 +1,10 @@
+ERR2752909_R1.s.mq30.calmd.bam.txt.filt.sort.csv
+ERR2752910_R1.s.mq30.calmd.bam.txt.filt.sort.csv
+ERR2752911_R1.s.mq30.calmd.bam.txt.filt.sort.csv
+ERR2752912_R1.s.mq30.calmd.bam.txt.filt.sort.csv
+ERR2752913_R1.s.mq30.calmd.bam.txt.filt.sort.csv
+ERR2752914_R1.s.mq30.calmd.bam.txt.filt.sort.csv
+ERR2752915_R1.s.mq30.calmd.bam.txt.filt.sort.csv
+ERR2752916_R1.s.mq30.calmd.bam.txt.filt.sort.csv
+ERR2752917_R1.s.mq30.calmd.bam.txt.filt.sort.csv
+ERR2752918_R1.s.mq30.calmd.bam.txt.filt.sort.csv

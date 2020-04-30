@@ -1,0 +1,17 @@
+# Heatmap installation testing, April 2020
+# Colin
+
+# don't use conda and python virtual envs together. Make sure virtualenv is installed
+conda deactivate
+pip3 install virtualenv
+
+virtualenv  --python=python3 venv
+
+# activate - use - the venv  
+source venv/bin/activate
+
+# install packages
+pip install numpy seaborn matplotlib pandas
+
+# test
+python3 heat5.py --batch_files eg1_sepsis_minion/sample.txt --filter_sTF 1 --filter_sStart 0 --filter_sEnd 4 --suffix_label A --genus 1 --corr 0
