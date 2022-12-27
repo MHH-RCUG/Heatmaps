@@ -61,5 +61,5 @@ Twisted==22.10.0
 ufw==0.36
 unattended-upgrades==0.1
 urllib3==1.26.5
-wheel==0.30.0
+wheel==0.38.1
 zope.interface==4.3.2
